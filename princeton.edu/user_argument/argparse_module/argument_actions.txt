@@ -1,0 +1,19 @@
+There are six builtin actions that can triggered when an argument is encountered:
+
++++store+++
+	Save the value , after optionally converting to a different type. This is the default action taken , if none specified
+
++++store_const+++
+	Save a value defined as part of the argument specification, rather than a value that comes from the arguments being parsed.
+
++++store_true/store_false+++
+	Save the appropiate boolean value. The action are used to implement boolean switches.
+
++++append+++
+	Save the value to a list . Multiple values are save if the argument is repeated
+
++++append_const+++
+	Save a value defined in the argument specifiaction to a list.
+
++++version+++
+	Print the version details about the program and then exits.
